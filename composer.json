@@ -1,9 +1,10 @@
 {
   "name": "david/wp",
-  "description": "sdfghjkl",
+  "description": "Project template for Wordpress sites maintained with Composer.",
   "type": "project",
-  "license": "mit",
+  "license": "GPL-2.0+",
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "repositories": [
     {
       "type": "composer",
@@ -12,7 +13,7 @@
   ],
   "require": {
     "php": ">=5.4",
-    "johnpbloch/wordpress": "4.9",
+    "johnpbloch/wordpress": "~4.9.0",
     "olefredrik/FoundationPress": "*",
     "wpackagist-plugin/advanced-custom-fields-font-awesome": "2.1.2",
     "wpackagist-plugin/akismet": "*"

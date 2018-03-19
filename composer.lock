@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a410e202aa8b1de56067c509025cd52",
+    "content-hash": "ee99de7e0d9dd163ca7f97c0b09c4f80",
     "packages": [
         {
             "name": "composer/installers",
@@ -128,20 +128,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.9.0",
+            "version": "4.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "b15c463dc04c79483058a3da16865c356393408d"
+                "reference": "5394373d26a8e304eb293c2a9359701a7ab03131"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/b15c463dc04c79483058a3da16865c356393408d",
-                "reference": "b15c463dc04c79483058a3da16865c356393408d",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/5394373d26a8e304eb293c2a9359701a7ab03131",
+                "reference": "5394373d26a8e304eb293c2a9359701a7ab03131",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "4.9.0",
+                "johnpbloch/wordpress-core": "4.9.4",
                 "johnpbloch/wordpress-core-installer": "^1.0",
                 "php": ">=5.3.2"
             },
@@ -163,32 +163,32 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-11-16T01:32:51+00:00"
+            "time": "2018-02-06T16:42:18+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "4.9.0",
+            "version": "4.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "bf2ed9c364d35bcabd15c4bb139c2581ea8513a9"
+                "reference": "eef672cdb4ae9e846c464d4d03684b43d4108eda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/bf2ed9c364d35bcabd15c4bb139c2581ea8513a9",
-                "reference": "bf2ed9c364d35bcabd15c4bb139c2581ea8513a9",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/eef672cdb4ae9e846c464d4d03684b43d4108eda",
+                "reference": "eef672cdb4ae9e846c464d4d03684b43d4108eda",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "provide": {
-                "wordpress/core-implementation": "4.9.0"
+                "wordpress/core-implementation": "4.9.4"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -203,7 +203,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-11-16T01:32:46+00:00"
+            "time": "2018-02-06T16:42:13+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -256,16 +256,16 @@
         },
         {
             "name": "olefredrik/foundationpress",
-            "version": "dev-master",
+            "version": "v2.10.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/olefredrik/FoundationPress.git",
-                "reference": "0d452290c49f38a47e74481b8dd8b427e328d925"
+                "reference": "37d1b6be6a71b34036a3dfdded5e08cf4489bf24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/olefredrik/FoundationPress/zipball/0d452290c49f38a47e74481b8dd8b427e328d925",
-                "reference": "0d452290c49f38a47e74481b8dd8b427e328d925",
+                "url": "https://api.github.com/repos/olefredrik/FoundationPress/zipball/37d1b6be6a71b34036a3dfdded5e08cf4489bf24",
+                "reference": "37d1b6be6a71b34036a3dfdded5e08cf4489bf24",
                 "shasum": ""
             },
             "require": {
@@ -283,7 +283,7 @@
                 }
             ],
             "description": "FoundationPress is a WordPress starter theme based on Foundation 6 by Zurb",
-            "time": "2018-03-16T17:36:07+00:00"
+            "time": "2017-10-11T13:00:59+00:00"
         },
         {
             "name": "wpackagist-plugin/advanced-custom-fields-font-awesome",
@@ -307,15 +307,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "dev-trunk",
+            "version": "4.0.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/akismet/",
-                "reference": "trunk"
+                "reference": "tags/4.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.zip?timestamp=1519053915",
+                "url": "https://downloads.wordpress.org/plugin/akismet.4.0.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -323,15 +323,14 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/akismet/",
-            "time": "2018-02-19T15:25:15+00:00"
+            "homepage": "https://wordpress.org/plugins/akismet/"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.4"
