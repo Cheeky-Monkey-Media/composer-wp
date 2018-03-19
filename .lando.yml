@@ -2,3 +2,9 @@ name: my-lando-app
 recipe: wordpress
 config:
   webroot: web
+
+
+services:
+  appserver:
+    build:
+      - cd $LANDO_MOUNT && composer install
