@@ -1,7 +1,7 @@
 vendor/
 web/
 src/plugins/*
-!src/plugins/custom*
+!src/plugins/client-name*
 
 src/themes/*
 !src/themes/custom*
