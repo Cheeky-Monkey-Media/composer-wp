@@ -3,5 +3,5 @@ web/
 src/plugins/*
 !src/plugins/custom*
 
-src/themes/*
+src/themes/foundationpress
 !src/themes/custom*

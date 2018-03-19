@@ -13,7 +13,9 @@
   "require": {
     "php": ">=5.4",
     "johnpbloch/wordpress": "4.9",
-    "wpackagist-plugin/advanced-custom-fields-font-awesome": "2.1.2"
+    "olefredrik/FoundationPress": "*",
+    "wpackagist-plugin/advanced-custom-fields-font-awesome": "2.1.2",
+    "wpackagist-plugin/akismet": "*"
   },
   "extra": {
     "wordpress-install-dir": "web",
@@ -25,16 +27,12 @@
   "scripts": {
     "post-update-cmd": [
       "if [[ ! -d src ]]; then mkdir src; fi",
-      "if [[ ! -h web/wp-content/plugins ]]; then cp -pPR web/wp-content/plugins/ src/plugins; fi",
-      "if [[ ! -h web/wp-content/themes ]]; then cp -pPR web/wp-content/themes/ src/themes; fi",
       "if [[ ! -h web/wp-content/plugins ]]; then rm -rf web/wp-content/{plugins,themes}; fi",
       "if [[ ! -h web/wp-content/plugins ]]; then ln -s ../../src/plugins web/wp-content/plugins; fi",
       "if [[ ! -h web/wp-content/themes ]]; then ln -s ../../src/themes web/wp-content/themes; fi"
     ],
     "post-install-cmd": [
       "if [[ ! -d src ]]; then mkdir src; fi",
-      "cp -pPR web/wp-content/plugins/ src/plugins",
-      "cp -pPR web/wp-content/themes/ src/themes",
       "rm -rf web/wp-content/{plugins,themes}",
       "ln -s ../../src/plugins web/wp-content/plugins",
       "ln -s ../../src/themes web/wp-content/themes"

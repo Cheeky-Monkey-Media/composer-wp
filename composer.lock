@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "67b2ea56f2ea9ff2237387d5ec33f3bb",
+    "content-hash": "4a410e202aa8b1de56067c509025cd52",
     "packages": [
         {
             "name": "composer/installers",
@@ -255,6 +255,37 @@
             "time": "2018-01-29T14:49:29+00:00"
         },
         {
+            "name": "olefredrik/foundationpress",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/olefredrik/FoundationPress.git",
+                "reference": "0d452290c49f38a47e74481b8dd8b427e328d925"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/olefredrik/FoundationPress/zipball/0d452290c49f38a47e74481b8dd8b427e328d925",
+                "reference": "0d452290c49f38a47e74481b8dd8b427e328d925",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ole Fredrik Lie",
+                    "email": "mail@olefredrik.com"
+                }
+            ],
+            "description": "FoundationPress is a WordPress starter theme based on Foundation 6 by Zurb",
+            "time": "2018-03-16T17:36:07+00:00"
+        },
+        {
             "name": "wpackagist-plugin/advanced-custom-fields-font-awesome",
             "version": "2.1.2",
             "source": {
@@ -273,6 +304,27 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields-font-awesome/"
+        },
+        {
+            "name": "wpackagist-plugin/akismet",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/akismet/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/akismet.zip?timestamp=1519053915",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/akismet/",
+            "time": "2018-02-19T15:25:15+00:00"
         }
     ],
     "packages-dev": [],
