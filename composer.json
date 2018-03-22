@@ -9,14 +9,57 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "wp-premium/advanced-custom-fields-pro",
+        "version": "master",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/wp-premium/advanced-custom-fields-pro/archive/master.zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "wp-premium/gravityforms",
+        "version": "master",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/wp-premium/gravityforms/archive/master.zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "dcooney/wordpress-ajax-load-more",
+        "version": "master",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/dcooney/wordpress-ajax-load-more/archive/master.zip"
+        }
+      }
     }
   ],
   "require": {
     "php": ">=5.4",
     "johnpbloch/wordpress": "~4.9.0",
     "olefredrik/FoundationPress": "*",
-    "wpackagist-plugin/advanced-custom-fields-font-awesome": "2.1.2",
-    "wpackagist-plugin/akismet": "*"
+    "wp-premium/advanced-custom-fields-pro": "*",
+    "wp-premium/gravityforms": "*",
+    "dcooney/wordpress-ajax-load-more": "*",
+    "wpackagist-plugin/custom-post-type-ui": "*",
+    "wpackagist-plugin/query-monitor": "*",
+    "wpackagist-plugin/svg-support": "*",
+    "wpackagist-plugin/wp-native-php-sessions": "*",
+    "wpackagist-plugin/akismet": "*",
+    "wpackagist-plugin/wordpress-seo": "*"
   },
   "extra": {
     "wordpress-install-dir": "web",
