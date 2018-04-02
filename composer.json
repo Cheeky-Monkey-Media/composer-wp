@@ -62,26 +62,18 @@
     "wpackagist-plugin/wordpress-seo": "*"
   },
   "extra": {
-    "wordpress-install-dir": "web",
+    "wordpress-install-dir": "web/system",
     "installer-paths": {
-      "src/themes/{$name}/": ["type:wordpress-theme"],
-      "src/plugins/{$name}/": ["type:wordpress-plugin"]
+      "web/src/themes/{$name}/": ["type:wordpress-theme"],
+      "web/src/plugins/{$name}/": ["type:wordpress-plugin"]
     }
   },
   "scripts": {
     "post-update-cmd": [
-      "if [[ ! -d src ]]; then mkdir src; fi",
-      "if [[ ! -h web/wp-content/themes ]]; then cp -pPR web/wp-content/themes/ src/themes; fi",
-      "if [[ ! -h web/wp-content/plugins ]]; then rm -rf web/wp-content/{plugins,themes}; fi",
-      "if [[ ! -h web/wp-content/plugins ]]; then ln -s ../../src/plugins web/wp-content/plugins; fi",
-      "if [[ ! -h web/wp-content/themes ]]; then ln -s ../../src/themes web/wp-content/themes; fi"
+      "cp -pPR web/system/wp-content/themes/twentyseventeen web/src/themes/twentyseventeen"
     ],
     "post-install-cmd": [
-      "if [[ ! -d src ]]; then mkdir src; fi",
-      "cp -pPR web/wp-content/themes/ src/themes",
-      "rm -rf web/wp-content/{plugins,themes}",
-      "ln -s ../../src/plugins web/wp-content/plugins",
-      "ln -s ../../src/themes web/wp-content/themes"
+      "cp -pPR web/system/wp-content/themes/twentyseventeen web/src/themes/twentyseventeen"
     ]
   }
 }

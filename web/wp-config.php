@@ -18,6 +18,15 @@
  * @package WordPress
  */
 
+// ** General settings ** //
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+define( 'WP_SITEURL', $protocol . $_SERVER['HTTP_HOST'] . '/system' );
+define( 'WP_HOME', $protocol . $_SERVER['HTTP_HOST'] );
+
+// Change the content directory.
+define( 'WP_CONTENT_DIR', dirname(__FILE__) . '/src' );
+define( 'WP_CONTENT_URL', $protocol . $_SERVER['HTTP_HOST'] .'/src' );
+
 // ** MySQL settings ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'wordpress' );
@@ -65,17 +74,6 @@ $table_prefix = 'wp_';
 
 
 
-
-
-/* Inserted by Local by Flywheel. See: http://codex.wordpress.org/Administration_Over_SSL#Using_a_Reverse_Proxy */
-if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https' ) {
-	$_SERVER['HTTPS'] = 'on';
-}
-
-/* Inserted by Local by Flywheel. Fixes $is_nginx global for rewrites. */
-if ( ! empty( $_SERVER['SERVER_SOFTWARE'] ) && strpos( $_SERVER['SERVER_SOFTWARE'], 'Flywheel/' ) !== false ) {
-	$_SERVER['SERVER_SOFTWARE'] = 'nginx/1.10.1';
-}
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
